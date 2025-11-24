@@ -1,0 +1,8 @@
+name: Merge Cop
+description: ''
+runs:
+    using: 'composite'
+    steps:
+        - name: Package version
+          shell: bash
+          run: ${{ github.action_path }}/scripts.sh
